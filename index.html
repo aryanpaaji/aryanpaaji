@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Solution for Module 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .section {
+            position: relative; /* For positioning the title */
+            padding: 50px 20px;
+            margin: 10px 0;
+            border: 1px solid black;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        h1 {
+           text-align: center;
+            margin-bottom: 40px; /* Adds some space below the heading */
+        }
+        .section-title {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            border: 1px solid black;
+        }
+
+        /* Desktop view (992px and above) */
+        @media (min-width: 992px) {
+            .section {
+                width: 32%;
+                float: left;
+                margin-right: 2%;
+            }
+
+            .section:nth-child(3n) {
+                margin-right: 0;
+            }
+
+            .container::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+
+        /* Tablet view (768px - 991px) */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .section {
+                width: 48%;
+                float: left;
+                margin-right: 4%;
+            }
+
+            .section:nth-child(2n) {
+                margin-right: 0;
+            }
+
+            .section:nth-child(3) {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .container::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+
+        /* Mobile view (less than 768px) */
+        @media (max-width: 767px) {
+            .section {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+
+        /* Custom colors and text adjustments */
+        .section:nth-child(1) {
+            background-color: grey;
+        }
+
+        .section:nth-child(2) {
+            background-color: grey;
+        }
+
+        .section:nth-child(3) {
+            background-color: grey;
+        }
+
+        .section-title:nth-child(1) {
+            background-color: pink;
+        }
+
+        .section-title:nth-child(2) {
+            background-color: red;
+        }
+
+        .section-title:nth-child(3) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Menu</h1>
+    <div class="container">
+        <div class="section">
+            <div class="section-title">Chicken</div>
+            <p>Delicious chicken dishes with a variety of spices and flavors. Perfect for any meal of the day.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Beef</div>
+            <p>Tender and juicy beef cuts, cooked to perfection. Ideal for hearty meals and special occasions.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Sushi</div>
+            <p>Fresh sushi rolls made with premium ingredients. A healthy and delicious option for seafood lovers.</p>
+        </div>
+    </div>
+
+</body>
+</html>
