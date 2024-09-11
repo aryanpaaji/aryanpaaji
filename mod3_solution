@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Menu</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    header, footer {
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    /* Section styling */
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .bg-light {
+      background-color: #f8f9fa !important;
+    }
+
+    /* Mobile-first adjustments */
+    @media (max-width: 768px) {
+      .navbar {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="bg-secondary text-white p-3">
+    <div class="container">
+      <h1 class="m-0">Food, LLC</h1>
+    </div>
+  </header>
+
+  <!-- Navbar (mobile view only) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#chicken">Chicken</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#beef">Beef</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sushi">Sushi</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mt-4">
+    <h2 class="text-center mb-4">Our Menu</h2>
+
+    <div class="row">
+      <!-- Chicken Section -->
+      <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+        <div id="chicken" class="p-3 bg-light border">
+          <h3>Chicken</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+
+      <!-- Beef Section -->
+      <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+        <div id="beef" class="p-3 bg-light border">
+          <h3>Beef</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+
+      <!-- Sushi Section -->
+      <div class="col-md-4 col-sm-12 col-xs-12 mb-4">
+        <div id="sushi" class="p-3 bg-light border">
+          <h3>Sushi</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-secondary text-white text-center p-3 mt-4">
+    <p>&copy; 2024 Food, LLC</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
